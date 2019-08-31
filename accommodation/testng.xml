@@ -3,7 +3,7 @@
 
 <suite name="EmployeesRestAPISuite">
 <listeners>
-	<listener class-name="utilities.Listeners" />
+	<listener class-name="utilities.listeners" />
 </listeners>
 	<test thread-count="3" name="EmployeesRestAPITest">
 		<classes>

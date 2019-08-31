@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" ignored="0" total="11" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="EmployeesRestAPISuite" duration-ms="10666" started-at="2019-08-31T15:30:36Z" finished-at="2019-08-31T15:30:47Z">
+  <suite name="EmployeesRestAPISuite" duration-ms="10056" started-at="2019-08-31T15:39:42Z" finished-at="2019-08-31T15:39:52Z">
     <groups>
     </groups>
-    <test name="EmployeesRestAPITest" duration-ms="10666" started-at="2019-08-31T15:30:36Z" finished-at="2019-08-31T15:30:47Z">
+    <test name="EmployeesRestAPITest" duration-ms="10056" started-at="2019-08-31T15:39:42Z" finished-at="2019-08-31T15:39:52Z">
       <class name="tests.TC00_GetAllEmployees">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="setup" is-config="true" duration-ms="41" started-at="2019-08-31T15:30:36Z" finished-at="2019-08-31T15:30:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="setup" is-config="true" duration-ms="40" started-at="2019-08-31T15:39:43Z" finished-at="2019-08-31T15:39:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getAllEmployees()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="getAllEmployees" is-config="true" duration-ms="3021" started-at="2019-08-31T15:30:36Z" finished-at="2019-08-31T15:30:39Z">
+        <test-method status="PASS" signature="getAllEmployees()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="getAllEmployees" is-config="true" duration-ms="2762" started-at="2019-08-31T15:39:43Z" finished-at="2019-08-31T15:39:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllEmployees -->
-        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="checkResponseBody" duration-ms="387" started-at="2019-08-31T15:30:39Z" finished-at="2019-08-31T15:30:40Z">
+        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="checkResponseBody" duration-ms="311" started-at="2019-08-31T15:39:45Z" finished-at="2019-08-31T15:39:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResponseBody -->
       </class> <!-- tests.TC00_GetAllEmployees -->
       <class name="tests.TC02_authentication">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC02_authentication@4883b407]" name="setup" is-config="true" duration-ms="2" started-at="2019-08-31T15:30:40Z" finished-at="2019-08-31T15:30:40Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC02_authentication@4883b407]" name="setup" is-config="true" duration-ms="1" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.TC02_authentication@4883b407]" name="prepareForTest" is-config="true" duration-ms="478" started-at="2019-08-31T15:30:40Z" finished-at="2019-08-31T15:30:40Z">
+        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.TC02_authentication@4883b407]" name="prepareForTest" is-config="true" duration-ms="602" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareForTest -->
-        <test-method status="FAIL" signature="authenticate()[pri:0, instance:tests.TC02_authentication@4883b407]" name="authenticate" duration-ms="8" started-at="2019-08-31T15:30:40Z" finished-at="2019-08-31T15:30:40Z">
+        <test-method status="FAIL" signature="authenticate()[pri:0, instance:tests.TC02_authentication@4883b407]" name="authenticate" duration-ms="4" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [401]]]>
@@ -76,287 +76,287 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- authenticate -->
       </class> <!-- tests.TC02_authentication -->
       <class name="tests.TC01_addEmployee">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="setup" is-config="true" duration-ms="2" started-at="2019-08-31T15:30:40Z" finished-at="2019-08-31T15:30:40Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="setup" is-config="true" duration-ms="1" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="prepareForTest" is-config="true" duration-ms="4" started-at="2019-08-31T15:30:40Z" finished-at="2019-08-31T15:30:40Z">
+        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="prepareForTest" is-config="true" duration-ms="4" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareForTest -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="546" started-at="2019-08-31T15:30:42Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:42Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="603" started-at="2019-08-31T15:39:48Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ahmed3970758]]>
+                <![CDATA[Ahmed3613205]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa2732738]]>
+                <![CDATA[Abokhalifa4543797]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa2662198]]>
+                <![CDATA[Abokhalifa1685335]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1234544059]]>
+                <![CDATA[Test1231748573]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com1613231]]>
+                <![CDATA[abokhalifa@gmail.com2260616]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="509" started-at="2019-08-31T15:30:42Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:43Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="537" started-at="2019-08-31T15:39:48Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ibrahim3146913]]>
+                <![CDATA[Ibrahim1840077]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa2361281]]>
+                <![CDATA[Abokhalifa4947588]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa3759463]]>
+                <![CDATA[Abokhalifa950909]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1243070274]]>
+                <![CDATA[Test1243619914]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com4987233]]>
+                <![CDATA[abokhalifa@gmail.com1983229]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="515" started-at="2019-08-31T15:30:43Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:43Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="513" started-at="2019-08-31T15:39:49Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mohamed854105]]>
+                <![CDATA[Mohamed2451398]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa4249815]]>
+                <![CDATA[Abokhalifa2089957]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa4779740]]>
+                <![CDATA[Abokhalifa1159231]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1251148539]]>
+                <![CDATA[Test1254324759]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com1972058]]>
+                <![CDATA[abokhalifa@gmail.com3030375]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="503" started-at="2019-08-31T15:30:43Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:44Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="508" started-at="2019-08-31T15:39:49Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ismail1210523]]>
+                <![CDATA[Ismail3061464]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa4761232]]>
+                <![CDATA[Abokhalifa3938109]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa4687609]]>
+                <![CDATA[Abokhalifa2409109]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1264571148]]>
+                <![CDATA[Test1262695518]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com4465848]]>
+                <![CDATA[abokhalifa@gmail.com4306740]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="479" started-at="2019-08-31T15:30:44Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:44Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="475" started-at="2019-08-31T15:39:50Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Hamza3366280]]>
+                <![CDATA[Hamza3409046]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa3969799]]>
+                <![CDATA[Abokhalifa1011571]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa1779648]]>
+                <![CDATA[Abokhalifa4110217]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1274371570]]>
+                <![CDATA[Test127612595]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com2314376]]>
+                <![CDATA[abokhalifa@gmail.com3682435]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="619" started-at="2019-08-31T15:30:44Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:45Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="436" started-at="2019-08-31T15:39:50Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Omar4660714]]>
+                <![CDATA[Omar3154693]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa2227358]]>
+                <![CDATA[Abokhalifa3740762]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa3749758]]>
+                <![CDATA[Abokhalifa3169379]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1284300204]]>
+                <![CDATA[Test1284647160]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com3910947]]>
+                <![CDATA[abokhalifa@gmail.com2429247]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="618" started-at="2019-08-31T15:30:45Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:46Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="510" started-at="2019-08-31T15:39:51Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Gamal817692]]>
+                <![CDATA[Gamal686437]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa1420993]]>
+                <![CDATA[Abokhalifa2703935]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa4798165]]>
+                <![CDATA[Abokhalifa4726779]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test129368080]]>
+                <![CDATA[Test1294153862]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com4147699]]>
+                <![CDATA[abokhalifa@gmail.com534071]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="522" started-at="2019-08-31T15:30:46Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:46Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="511" started-at="2019-08-31T15:39:51Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Samy2513630]]>
+                <![CDATA[Samy2790399]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa4687420]]>
+                <![CDATA[Abokhalifa2595172]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa842516]]>
+                <![CDATA[Abokhalifa3521660]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1303381368]]>
+                <![CDATA[Test1304578989]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com1750212]]>
+                <![CDATA[abokhalifa@gmail.com4634163]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="513" started-at="2019-08-31T15:30:46Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:30:47Z">
+        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="508" started-at="2019-08-31T15:39:52Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Eshak1973954]]>
+                <![CDATA[Eshak4875741]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Abokhalifa552333]]>
+                <![CDATA[Abokhalifa4902751]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Abokhalifa237979]]>
+                <![CDATA[Abokhalifa4407647]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Test1313337882]]>
+                <![CDATA[Test131722951]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[abokhalifa@gmail.com3195760]]>
+                <![CDATA[abokhalifa@gmail.com4704680]]>
               </value>
             </param>
           </params>

@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>RestassuredAPITesting_Employee_Project</groupId>
-  <artifactId>RestassuredAPITesting_Employee_Project</artifactId>
+  <groupId>com.almatar</groupId>
+  <artifactId>accommodation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>RestassuredAPITesting_Employee_Project</name>
+  <name>accommodation</name>
   <url>http://maven.apache.org</url>
 
   <properties>

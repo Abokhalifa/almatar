@@ -9,7 +9,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class Listeners extends TestListenerAdapter
+public class listeners extends TestListenerAdapter
 {
 	
 	public ExtentHtmlReporter htmlReporter;
