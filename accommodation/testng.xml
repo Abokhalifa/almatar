@@ -3,15 +3,13 @@
 
 <suite name="EmployeesRestAPISuite">
 <listeners>
-	<listener class-name="com.employeeapi.utilities.Listeners" />
+	<listener class-name="utilities.Listeners" />
 </listeners>
-	<test thread-count="5" name="EmployeesRestAPITest">
+	<test thread-count="3" name="EmployeesRestAPITest">
 		<classes>
-			<class name="com.employeeapi.testCases.TC001_Get_All_Employees" />
-			<class name="com.employeeapi.testCases.TC002_Get_Single_Employee_Record" />
-			<class name="com.employeeapi.testCases.TC003_Post_Employee_Record" />
-			<class name="com.employeeapi.testCases.TC004_Put_Employee_Record" />
-			<class name="com.employeeapi.testCases.TC005_Delete_Employee_Record" />
+			<class name="tests.TC00_GetAllEmployees" />
+			<class name="tests.TC02_authentication" />
+			<class name="tests.TC01_addEmployee" />
 
 		</classes>
 	</test> <!-- Test -->

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-EmployeesRestAPISuite">
+              <span class="suite-name border-failed">EmployeesRestAPISuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-EmployeesRestAPISuite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-EmployeesRestAPISuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-EmployeesRestAPISuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-EmployeesRestAPISuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-EmployeesRestAPISuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-EmployeesRestAPISuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-EmployeesRestAPISuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EmployeesRestAPISuite" class="hide-methods failed suite-EmployeesRestAPISuite"> (hide)</a> <!-- hide-methods failed suite-EmployeesRestAPISuite -->
+                      <a href="#" panel-name="suite-EmployeesRestAPISuite" class="show-methods failed suite-EmployeesRestAPISuite"> (show)</a> <!-- show-methods failed suite-EmployeesRestAPISuite -->
+                    </span>
+                    <div class="method-list-content failed suite-EmployeesRestAPISuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC02_authentication" hash-for-method="authenticate">authenticate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EmployeesRestAPISuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EmployeesRestAPISuite" class="hide-methods passed suite-EmployeesRestAPISuite"> (hide)</a> <!-- hide-methods passed suite-EmployeesRestAPISuite -->
+                      <a href="#" panel-name="suite-EmployeesRestAPISuite" class="show-methods passed suite-EmployeesRestAPISuite"> (show)</a> <!-- show-methods passed suite-EmployeesRestAPISuite -->
+                    </span>
+                    <div class="method-list-content passed suite-EmployeesRestAPISuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Gamal817692, Abokhalifa1420993, Abokhalifa4798165, Test129368080, abokhalifa@gmail.com4147699)">addEmployeeRecord(Gamal817692, Abokhalifa1420993, Abokhalifa4798165, Test129368080, abokhalifa@gmail.com4147699)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Samy2513630, Abokhalifa4687420, Abokhalifa842516, Test1303381368, abokhalifa@gmail.com1750212)">addEmployeeRecord(Samy2513630, Abokhalifa4687420, Abokhalifa842516, Test1303381368, abokhalifa@gmail.com1750212)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Ahmed3970758, Abokhalifa2732738, Abokhalifa2662198, Test1234544059, abokhalifa@gmail.com1613231)">addEmployeeRecord(Ahmed3970758, Abokhalifa2732738, Abokhalifa2662198, Test1234544059, abokhalifa@gmail.com1613231)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Omar4660714, Abokhalifa2227358, Abokhalifa3749758, Test1284300204, abokhalifa@gmail.com3910947)">addEmployeeRecord(Omar4660714, Abokhalifa2227358, Abokhalifa3749758, Test1284300204, abokhalifa@gmail.com3910947)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Ismail1210523, Abokhalifa4761232, Abokhalifa4687609, Test1264571148, abokhalifa@gmail.com4465848)">addEmployeeRecord(Ismail1210523, Abokhalifa4761232, Abokhalifa4687609, Test1264571148, abokhalifa@gmail.com4465848)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Ibrahim3146913, Abokhalifa2361281, Abokhalifa3759463, Test1243070274, abokhalifa@gmail.com4987233)">addEmployeeRecord(Ibrahim3146913, Abokhalifa2361281, Abokhalifa3759463, Test1243070274, abokhalifa@gmail.com4987233)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Hamza3366280, Abokhalifa3969799, Abokhalifa1779648, Test1274371570, abokhalifa@gmail.com2314376)">addEmployeeRecord(Hamza3366280, Abokhalifa3969799, Abokhalifa1779648, Test1274371570, abokhalifa@gmail.com2314376)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Eshak1973954, Abokhalifa552333, Abokhalifa237979, Test1313337882, abokhalifa@gmail.com3195760)">addEmployeeRecord(Eshak1973954, Abokhalifa552333, Abokhalifa237979, Test1313337882, abokhalifa@gmail.com3195760)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC01_addEmployee" hash-for-method="addEmployeeRecord(Mohamed854105, Abokhalifa4249815, Abokhalifa4779740, Test1251148539, abokhalifa@gmail.com1972058)">addEmployeeRecord(Mohamed854105, Abokhalifa4249815, Abokhalifa4779740, Test1251148539, abokhalifa@gmail.com1972058)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-EmployeesRestAPISuite" title="tests.TC00_GetAllEmployees" hash-for-method="checkResponseBody">checkResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EmployeesRestAPISuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EmployeesRestAPISuite" class="panel EmployeesRestAPISuite">
+          <div class="suite-EmployeesRestAPISuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.TC02_authentication</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="authenticate">
+                  </a> <!-- authenticate -->
+                  <span class="method-name">authenticate</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
+	at tests.TC02_authentication.authenticate(TC02_authentication.java:49)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmployeesRestAPISuite-class-failed -->
+          <div class="suite-EmployeesRestAPISuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC00_GetAllEmployees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseBody">
+                  </a> <!-- checkResponseBody -->
+                  <span class="method-name">checkResponseBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmployeesRestAPISuite-class-passed -->
+          <div class="suite-EmployeesRestAPISuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TC01_addEmployee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Gamal817692, Abokhalifa1420993, Abokhalifa4798165, Test129368080, abokhalifa@gmail.com4147699)">
+                  </a> <!-- addEmployeeRecord(Gamal817692, Abokhalifa1420993, Abokhalifa4798165, Test129368080, abokhalifa@gmail.com4147699) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Gamal817692, Abokhalifa1420993, Abokhalifa4798165, Test129368080, abokhalifa@gmail.com4147699)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Samy2513630, Abokhalifa4687420, Abokhalifa842516, Test1303381368, abokhalifa@gmail.com1750212)">
+                  </a> <!-- addEmployeeRecord(Samy2513630, Abokhalifa4687420, Abokhalifa842516, Test1303381368, abokhalifa@gmail.com1750212) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Samy2513630, Abokhalifa4687420, Abokhalifa842516, Test1303381368, abokhalifa@gmail.com1750212)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Ahmed3970758, Abokhalifa2732738, Abokhalifa2662198, Test1234544059, abokhalifa@gmail.com1613231)">
+                  </a> <!-- addEmployeeRecord(Ahmed3970758, Abokhalifa2732738, Abokhalifa2662198, Test1234544059, abokhalifa@gmail.com1613231) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Ahmed3970758, Abokhalifa2732738, Abokhalifa2662198, Test1234544059, abokhalifa@gmail.com1613231)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Omar4660714, Abokhalifa2227358, Abokhalifa3749758, Test1284300204, abokhalifa@gmail.com3910947)">
+                  </a> <!-- addEmployeeRecord(Omar4660714, Abokhalifa2227358, Abokhalifa3749758, Test1284300204, abokhalifa@gmail.com3910947) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Omar4660714, Abokhalifa2227358, Abokhalifa3749758, Test1284300204, abokhalifa@gmail.com3910947)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Ismail1210523, Abokhalifa4761232, Abokhalifa4687609, Test1264571148, abokhalifa@gmail.com4465848)">
+                  </a> <!-- addEmployeeRecord(Ismail1210523, Abokhalifa4761232, Abokhalifa4687609, Test1264571148, abokhalifa@gmail.com4465848) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Ismail1210523, Abokhalifa4761232, Abokhalifa4687609, Test1264571148, abokhalifa@gmail.com4465848)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Ibrahim3146913, Abokhalifa2361281, Abokhalifa3759463, Test1243070274, abokhalifa@gmail.com4987233)">
+                  </a> <!-- addEmployeeRecord(Ibrahim3146913, Abokhalifa2361281, Abokhalifa3759463, Test1243070274, abokhalifa@gmail.com4987233) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Ibrahim3146913, Abokhalifa2361281, Abokhalifa3759463, Test1243070274, abokhalifa@gmail.com4987233)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Hamza3366280, Abokhalifa3969799, Abokhalifa1779648, Test1274371570, abokhalifa@gmail.com2314376)">
+                  </a> <!-- addEmployeeRecord(Hamza3366280, Abokhalifa3969799, Abokhalifa1779648, Test1274371570, abokhalifa@gmail.com2314376) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Hamza3366280, Abokhalifa3969799, Abokhalifa1779648, Test1274371570, abokhalifa@gmail.com2314376)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Eshak1973954, Abokhalifa552333, Abokhalifa237979, Test1313337882, abokhalifa@gmail.com3195760)">
+                  </a> <!-- addEmployeeRecord(Eshak1973954, Abokhalifa552333, Abokhalifa237979, Test1313337882, abokhalifa@gmail.com3195760) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Eshak1973954, Abokhalifa552333, Abokhalifa237979, Test1313337882, abokhalifa@gmail.com3195760)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeRecord(Mohamed854105, Abokhalifa4249815, Abokhalifa4779740, Test1251148539, abokhalifa@gmail.com1972058)">
+                  </a> <!-- addEmployeeRecord(Mohamed854105, Abokhalifa4249815, Abokhalifa4779740, Test1251148539, abokhalifa@gmail.com1972058) -->
+                  <span class="method-name">addEmployeeRecord</span>
+                  <span class="parameters">(Mohamed854105, Abokhalifa4249815, Abokhalifa4779740, Test1251148539, abokhalifa@gmail.com1972058)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EmployeesRestAPISuite-class-passed -->
+        </div> <!-- panel EmployeesRestAPISuite -->
+        <div panel-name="test-xml-EmployeesRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/abokhlaifa/git/almatar/accommodation/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;EmployeesRestAPISuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;EmployeesRestAPITest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.TC00_GetAllEmployees&quot;/&gt;
+      &lt;class name=&quot;tests.TC02_authentication&quot;/&gt;
+      &lt;class name=&quot;tests.TC01_addEmployee&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EmployeesRestAPITest --&gt;
+&lt;/suite&gt; &lt;!-- EmployeesRestAPISuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EmployeesRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EmployeesRestAPISuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">EmployeesRestAPITest (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EmployeesRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EmployeesRestAPISuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EmployeesRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EmployeesRestAPISuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EmployeesRestAPISuite');
+function tableData_EmployeesRestAPISuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addEmployeeRecord')
+data.setCell(0, 2, 'tests.TC01_addEmployee')
+data.setCell(0, 3, 619);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addEmployeeRecord')
+data.setCell(1, 2, 'tests.TC01_addEmployee')
+data.setCell(1, 3, 618);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addEmployeeRecord')
+data.setCell(2, 2, 'tests.TC01_addEmployee')
+data.setCell(2, 3, 546);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addEmployeeRecord')
+data.setCell(3, 2, 'tests.TC01_addEmployee')
+data.setCell(3, 3, 522);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addEmployeeRecord')
+data.setCell(4, 2, 'tests.TC01_addEmployee')
+data.setCell(4, 3, 515);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addEmployeeRecord')
+data.setCell(5, 2, 'tests.TC01_addEmployee')
+data.setCell(5, 3, 513);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addEmployeeRecord')
+data.setCell(6, 2, 'tests.TC01_addEmployee')
+data.setCell(6, 3, 509);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addEmployeeRecord')
+data.setCell(7, 2, 'tests.TC01_addEmployee')
+data.setCell(7, 3, 503);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addEmployeeRecord')
+data.setCell(8, 2, 'tests.TC01_addEmployee')
+data.setCell(8, 3, 479);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkResponseBody')
+data.setCell(9, 2, 'tests.TC00_GetAllEmployees')
+data.setCell(9, 3, 387);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'authenticate')
+data.setCell(10, 2, 'tests.TC02_authentication')
+data.setCell(10, 3, 8);
+window.suiteTableData['EmployeesRestAPISuite']= { tableData: data, tableDiv: 'times-div-EmployeesRestAPISuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <div id="times-div-EmployeesRestAPISuite">
+              </div> <!-- times-div-EmployeesRestAPISuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EmployeesRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EmployeesRestAPISuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EmployeesRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EmployeesRestAPISuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC00_GetAllEmployees</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getAllEmployees</span>
+                <span class="method-start">41 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkResponseBody</span>
+                <span class="method-start">3068 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC02_authentication</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3587 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">prepareForTest</span>
+                <span class="method-start">3589 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">authenticate</span>
+                <span class="method-start">4067 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TC01_addEmployee</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4079 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">prepareForTest</span>
+                <span class="method-start">4081 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Ahmed3970758, Abokhalifa2732738, Abokhalifa2662198, Test1234544059, abokhalifa@gmail.com1613231)</span>
+                <span class="method-start">5564 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Ibrahim3146913, Abokhalifa2361281, Abokhalifa3759463, Test1243070274, abokhalifa@gmail.com4987233)</span>
+                <span class="method-start">6112 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Mohamed854105, Abokhalifa4249815, Abokhalifa4779740, Test1251148539, abokhalifa@gmail.com1972058)</span>
+                <span class="method-start">6623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Ismail1210523, Abokhalifa4761232, Abokhalifa4687609, Test1264571148, abokhalifa@gmail.com4465848)</span>
+                <span class="method-start">7144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Hamza3366280, Abokhalifa3969799, Abokhalifa1779648, Test1274371570, abokhalifa@gmail.com2314376)</span>
+                <span class="method-start">7649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Omar4660714, Abokhalifa2227358, Abokhalifa3749758, Test1284300204, abokhalifa@gmail.com3910947)</span>
+                <span class="method-start">8130 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Gamal817692, Abokhalifa1420993, Abokhalifa4798165, Test129368080, abokhalifa@gmail.com4147699)</span>
+                <span class="method-start">8752 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Samy2513630, Abokhalifa4687420, Abokhalifa842516, Test1303381368, abokhalifa@gmail.com1750212)</span>
+                <span class="method-start">9375 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeRecord(Eshak1973954, Abokhalifa552333, Abokhalifa237979, Test1313337882, abokhalifa@gmail.com3195760)</span>
+                <span class="method-start">9899 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
