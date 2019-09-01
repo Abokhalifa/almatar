@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://www.opentravel.org/OTA/2002/11" xmlns:ns2="http://www.ebxml.org/namespaces/messageHeader" xmlns:ns3="http://schemas.xmlsoap.org/ws/2002/12/secext">
+    <SOAP-ENV:Header>
+        <ns2:MessageHeader SOAP-ENV:mustUnderstand="1">
+            <ns2:From>
+                <ns2:PartyId></ns2:PartyId>
+            </ns2:From>
+            <ns2:To>
+                <ns2:PartyId></ns2:PartyId>
+            </ns2:To>
+            <ns2:CPAId>5FEI</ns2:CPAId>
+            <ns2:ConversationId>37831274</ns2:ConversationId>
+            <ns2:Service>SessionCreateRQ</ns2:Service>
+            <ns2:Action>SessionCreateRQ</ns2:Action>
+            <ns2:MessageData>
+                <ns2:MessageId>5868664</ns2:MessageId>
+                <ns2:Timestamp>2018-10-22T12:05:30Z</ns2:Timestamp>
+            </ns2:MessageData>
+        </ns2:MessageHeader>
+        <ns3:Security>
+            <ns3:UsernameToken>
+                <ns3:Username>794203</ns3:Username>
+                <ns3:Password>WS120518</ns3:Password>
+                <Organization>5FEI</Organization>
+                <Domain>AA</Domain>
+            </ns3:UsernameToken>
+        </ns3:Security>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns1:SessionCreateRQ returnContextID="false">
+            <ns1:POS>
+                <ns1:Source PseudoCityCode="5FEI"/>
+            </ns1:POS>
+        </ns1:SessionCreateRQ>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,52 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="11" passed="10">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="EmployeesRestAPISuite" duration-ms="10056" started-at="2019-08-31T15:39:42Z" finished-at="2019-08-31T15:39:52Z">
+  <suite name="Default suite" duration-ms="3870" started-at="2019-09-01T14:58:37Z" finished-at="2019-09-01T14:58:41Z">
     <groups>
     </groups>
-    <test name="EmployeesRestAPITest" duration-ms="10056" started-at="2019-08-31T15:39:42Z" finished-at="2019-08-31T15:39:52Z">
-      <class name="tests.TC00_GetAllEmployees">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="setup" is-config="true" duration-ms="40" started-at="2019-08-31T15:39:43Z" finished-at="2019-08-31T15:39:43Z">
+    <test name="Default test" duration-ms="3870" started-at="2019-09-01T14:58:37Z" finished-at="2019-09-01T14:58:41Z">
+      <class name="tests.TC03_soapTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC03_soapTest@31ef45e3]" name="setup" is-config="true" duration-ms="55" started-at="2019-09-01T14:58:37Z" finished-at="2019-09-01T14:58:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getAllEmployees()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="getAllEmployees" is-config="true" duration-ms="2762" started-at="2019-08-31T15:39:43Z" finished-at="2019-08-31T15:39:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAllEmployees -->
-        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:tests.TC00_GetAllEmployees@5622fdf]" name="checkResponseBody" duration-ms="311" started-at="2019-08-31T15:39:45Z" finished-at="2019-08-31T15:39:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkResponseBody -->
-      </class> <!-- tests.TC00_GetAllEmployees -->
-      <class name="tests.TC02_authentication">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC02_authentication@4883b407]" name="setup" is-config="true" duration-ms="1" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.TC02_authentication@4883b407]" name="prepareForTest" is-config="true" duration-ms="602" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
+        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.TC03_soapTest@31ef45e3]" name="prepareForTest" is-config="true" duration-ms="2528" started-at="2019-09-01T14:58:37Z" finished-at="2019-09-01T14:58:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareForTest -->
-        <test-method status="FAIL" signature="authenticate()[pri:0, instance:tests.TC02_authentication@4883b407]" name="authenticate" duration-ms="4" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
+        <test-method status="PASS" signature="checkResponseBody()[pri:0, instance:tests.TC03_soapTest@31ef45e3]" name="checkResponseBody" duration-ms="77" started-at="2019-09-01T14:58:40Z" finished-at="2019-09-01T14:58:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method status="FAIL" signature="traverseXML()[pri:0, instance:tests.TC03_soapTest@31ef45e3]" name="traverseXML" duration-ms="1190" started-at="2019-09-01T14:58:40Z" finished-at="2019-09-01T14:58:41Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [200] but found [401]]]>
+              <![CDATA[1 expectation failed.
+XML path Envelope.Header.Security.BinarySecurityToken doesn't match.
+Expected: iterable containing ["Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTD!ICESMSLB\/CRT.LB!-"]
+  Actual: Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTC!ICESMSLB\/CRT.LB!-2978860672995849588!743010!0
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at tests.TC02_authentication.authenticate(TC02_authentication.java:49)
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+XML path Envelope.Header.Security.BinarySecurityToken doesn't match.
+Expected: iterable containing ["Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTD!ICESMSLB\/CRT.LB!-"]
+  Actual: Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTC!ICESMSLB\/CRT.LB!-2978860672995849588!743010!0
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:275)
+at io.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:190)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:258)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:274)
+at tests.TC03_soapTest.traverseXML(TC03_soapTest.java:77)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
@@ -73,297 +94,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- authenticate -->
-      </class> <!-- tests.TC02_authentication -->
-      <class name="tests.TC01_addEmployee">
-        <test-method status="PASS" signature="setup()[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="setup" is-config="true" duration-ms="1" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="prepareForTest()[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="prepareForTest" is-config="true" duration-ms="4" started-at="2019-08-31T15:39:46Z" finished-at="2019-08-31T15:39:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prepareForTest -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="603" started-at="2019-08-31T15:39:48Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ahmed3613205]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa4543797]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa1685335]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test1231748573]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com2260616]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="537" started-at="2019-08-31T15:39:48Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ibrahim1840077]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa4947588]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa950909]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test1243619914]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com1983229]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="513" started-at="2019-08-31T15:39:49Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:49Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mohamed2451398]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa2089957]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa1159231]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test1254324759]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com3030375]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="508" started-at="2019-08-31T15:39:49Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Ismail3061464]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa3938109]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa2409109]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test1262695518]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com4306740]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="475" started-at="2019-08-31T15:39:50Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Hamza3409046]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa1011571]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa4110217]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test127612595]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com3682435]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="436" started-at="2019-08-31T15:39:50Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Omar3154693]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa3740762]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa3169379]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test1284647160]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com2429247]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="510" started-at="2019-08-31T15:39:51Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Gamal686437]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa2703935]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa4726779]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test1294153862]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com534071]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="511" started-at="2019-08-31T15:39:51Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Samy2790399]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa2595172]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa3521660]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test1304578989]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com4634163]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-        <test-method status="PASS" signature="addEmployeeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.TC01_addEmployee@7d9d1a19]" name="addEmployeeRecord" duration-ms="508" started-at="2019-08-31T15:39:52Z" data-provider="emplyeeDataProviderExcel" finished-at="2019-08-31T15:39:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Eshak4875741]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abokhalifa4902751]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Abokhalifa4407647]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Test131722951]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[abokhalifa@gmail.com4704680]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeRecord -->
-      </class> <!-- tests.TC01_addEmployee -->
-    </test> <!-- EmployeesRestAPITest -->
-  </suite> <!-- EmployeesRestAPISuite -->
+        </test-method> <!-- traverseXML -->
+      </class> <!-- tests.TC03_soapTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

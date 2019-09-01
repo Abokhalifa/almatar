@@ -22,7 +22,7 @@ public class baseTest {
 		@BeforeClass
 		public void setup()
 		{
-			logger = Logger.getLogger("EmployeesRestAPI");
+			logger = Logger.getLogger("accommodationAPIs");
 			PropertyConfigurator.configure("log4j.properties");
 			logger.setLevel(Level.DEBUG);
 			
