@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [EmployeesRestAPISuite]">
-  <listeners>
-    <listener class-name="utilities.listeners"/>
-  </listeners>
-  <test thread-count="5" name="EmployeesRestAPITest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TC02_authentication">
+      <class name="tests.TC03_soapTest">
         <methods>
-          <include name="authenticate"/>
           <include name="prepareForTest"/>
           <include name="setup"/>
+          <include name="traverseXML"/>
         </methods>
-      </class> <!-- tests.TC02_authentication -->
+      </class> <!-- tests.TC03_soapTest -->
     </classes>
-  </test> <!-- EmployeesRestAPITest(failed) -->
-</suite> <!-- Failed suite [EmployeesRestAPISuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

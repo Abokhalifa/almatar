@@ -645,4 +645,36 @@
  01 Sep 2019 16:58:40 INFO  accommodationAPIs:50 - ******Checking Response Body*******
  01 Sep 2019 16:58:40 INFO  accommodationAPIs:52 - Response body ==> <?xml version="1.0" encoding="UTF-8"?>
 <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI"/></eb:From><eb:To><eb:PartyId eb:type="URI"/></eb:To><eb:CPAId>5FEI</eb:CPAId><eb:ConversationId>37831274</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>3858084539197770150</eb:MessageId><eb:Timestamp>2019-09-01T14:58:39</eb:Timestamp><eb:RefToMessageId>5868664</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTC!ICESMSLB\/CRT.LB!-2978860677308792434!743002!0</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>37831274</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+ 02 Sep 2019 14:18:55 INFO  accommodationAPIs:30 - ******Starting TC03_SOAP test*******
+ 02 Sep 2019 14:18:58 INFO  accommodationAPIs:50 - ******Checking Response Body*******
+ 02 Sep 2019 14:18:58 INFO  accommodationAPIs:52 - Response body ==> <?xml version="1.0" encoding="UTF-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Header><eb:MessageHeader xmlns:eb="http://www.ebxml.org/namespaces/messageHeader" eb:version="1.0" soap-env:mustUnderstand="1"><eb:From><eb:PartyId eb:type="URI"/></eb:From><eb:To><eb:PartyId eb:type="URI"/></eb:To><eb:CPAId>5FEI</eb:CPAId><eb:ConversationId>37831274</eb:ConversationId><eb:Service eb:type="sabreXML">Session</eb:Service><eb:Action>SessionCreateRS</eb:Action><eb:MessageData><eb:MessageId>3587668443380800151</eb:MessageId><eb:Timestamp>2019-09-02T12:18:58</eb:Timestamp><eb:RefToMessageId>5868664</eb:RefToMessageId></eb:MessageData></eb:MessageHeader><wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2002/12/secext"><wsse:BinarySecurityToken valueType="String" EncodingType="wsse:Base64Binary">Shared/IDL:IceSess\/SessMgr:1\.0.IDL/Common/!ICESMS\/ACPCRTC!ICESMSLB\/CRT.LB!-2978546029566531441!1451530!0</wsse:BinarySecurityToken></wsse:Security></soap-env:Header><soap-env:Body><SessionCreateRS xmlns="http://www.opentravel.org/OTA/2002/11" version="1" status="Approved">	<ConversationId>37831274</ConversationId></SessionCreateRS></soap-env:Body></soap-env:Envelope>
+ 03 Sep 2019 12:02:50 INFO  accommodationAPIs:30 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 12:14:56 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 12:16:11 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 12:47:47 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 15:36:16 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 15:42:14 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 15:43:26 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 16:42:30 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 16:43:12 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 16:55:37 INFO  accommodationAPIs:32 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 16:55:39 INFO  accommodationAPIs:68 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 16:56:04 INFO  accommodationAPIs:68 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 16:56:46 INFO  accommodationAPIs:68 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 16:58:01 INFO  accommodationAPIs:68 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:01:27 INFO  accommodationAPIs:32 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:02:32 INFO  accommodationAPIs:32 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:03:20 INFO  accommodationAPIs:32 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:07:15 INFO  accommodationAPIs:32 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:10:20 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:10:49 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:13:52 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:15:13 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:15:28 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:22:37 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:22:53 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:23:55 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:25:36 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 03 Sep 2019 17:26:32 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
  

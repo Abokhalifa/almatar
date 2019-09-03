@@ -45,6 +45,7 @@
 
 	<dependencies>
 
+
 		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
 		<dependency>
 			<groupId>com.jayway.restassured</groupId>
