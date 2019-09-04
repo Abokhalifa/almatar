@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 
 
-import base.baseTest;
+import base.testBase;
 import io.restassured.RestAssured;
 import io.restassured.authentication.PreemptiveBasicAuthScheme;
 import io.restassured.http.Method;
@@ -20,7 +20,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.PreemptiveAuthSpec;
 import io.restassured.specification.RequestSpecification;
 
-public class TC02_authentication extends baseTest {
+public class TC02_authentication extends testBase {
 	
 	@BeforeClass
 	public void prepareForTest() throws InterruptedException

@@ -16,6 +16,7 @@
 	</properties>
 
 	<build>
+
 		<plugins>
 
 			<plugin>
@@ -46,6 +47,13 @@
 	<dependencies>
 
 
+
+
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>0.14</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
 		<dependency>
 			<groupId>com.jayway.restassured</groupId>

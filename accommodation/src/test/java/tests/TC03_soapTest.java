@@ -13,7 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import base.baseTest;
+import base.testBase;
 import io.restassured.*;
 import io.restassured.config.RestAssuredConfig;
 import io.restassured.http.ContentType;
@@ -25,7 +25,7 @@ import static org.hamcrest.Matchers.*;
 import com.jayway.restassured.path.xml.XmlPath;
 import com.jayway.restassured.path.xml.XmlPath.CompatibilityMode;
 
-public class TC03_soapTest extends baseTest {
+public class TC03_soapTest extends testBase {
 
 	@BeforeClass
 	public void prepareForTest() throws InterruptedException, IOException

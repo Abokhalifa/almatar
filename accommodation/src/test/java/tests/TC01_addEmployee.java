@@ -8,13 +8,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import base.baseTest;
+import base.testBase;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import utilities.excel;
 import utilities.miscellaneous;
 
-public class TC01_addEmployee extends baseTest {
+public class TC01_addEmployee extends testBase {
 	
 	
 	@BeforeClass

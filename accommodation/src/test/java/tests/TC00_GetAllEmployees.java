@@ -4,13 +4,13 @@ package tests;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import base.baseTest;
+import base.testBase;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import junit.framework.Assert;
 
-public class TC00_GetAllEmployees extends baseTest {
+public class TC00_GetAllEmployees extends testBase {
 	
 	@BeforeClass
 	public void getAllEmployees() throws InterruptedException
