@@ -2,14 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="EmployeesRestAPISuite">
-<listeners>
-	<listener class-name="utilities.listeners" />
-</listeners>
+	<listeners>
+		<listener class-name="utilities.listeners" />
+	</listeners>
 	<test thread-count="3" name="EmployeesRestAPITest">
 		<classes>
 			<class name="tests.TC00_GetAllEmployees" />
 			<class name="tests.TC02_authentication" />
 			<class name="tests.TC01_addEmployee" />
+
 
 		</classes>
 	</test> <!-- Test -->

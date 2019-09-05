@@ -93,6 +93,7 @@ public class TC03_soapTest extends testBase {
 	@Test(enabled =true)
 	public void traverseXML() throws InterruptedException
 	{
+		String responseBody = response.getBody().asString();
 
 
 		//String name = with(XML).get("shopping.category.item[0].name");
@@ -108,7 +109,16 @@ public class TC03_soapTest extends testBase {
 		.then()
 		.statusCode(200)
 		.assertThat()
-		.body("Envelope.Header.Security.BinarySecurityToken",containsString("Shared/IDL:IceSess"));
+		.body("Envelope.Header.Security.text()",containsString("Shared/IDL:IceSess"))
+		.log();
+		
+		XmlPath tokenXMLPath= new XmlPath(responseBody);//Converting string into xml path to assert
+		String token=tokenXMLPath.getString("Envelope.Header.Security.BinarySecurityToken.text()");
+		System.out.println(token);
+		
+		
+		
+		
 	}
 
 	@Test(enabled =false)

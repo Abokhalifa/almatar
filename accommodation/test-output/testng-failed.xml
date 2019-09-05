@@ -6,8 +6,8 @@
       <class name="tests.TC03_soapTest">
         <methods>
           <include name="prepareForTest"/>
-          <include name="setup"/>
           <include name="traverseXML"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- tests.TC03_soapTest -->
     </classes>
