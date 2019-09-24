@@ -687,4 +687,48 @@
  05 Sep 2019 10:39:42 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
  05 Sep 2019 10:40:33 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
  05 Sep 2019 10:47:41 INFO  accommodationAPIs:33 - ******Starting TC03_SOAP test*******
+ 07 Sep 2019 12:20:54 INFO  accommodationAPIs:18 - ******Starting TC00_getAllEmployees*******
+ 07 Sep 2019 12:20:56 INFO  accommodationAPIs:31 - ******Checking Response Body*******
+ 07 Sep 2019 12:20:56 INFO  accommodationAPIs:33 - Response body ==> [{"id":"148518","employee_name":"FirstName","employee_salary":"15853","employee_age":"62","profile_image":""},{"id":"148519","employee_name":"Test","employee_salary":"10000","employee_age":"20","profile_image":""}]
+ 07 Sep 2019 13:30:02 INFO  accommodationAPIs:27 - ******Starting TC03_SOAP test*******
+ 07 Sep 2019 13:47:50 INFO  accommodationAPIs:30 - ******Starting TC03_SOAP test*******
+ 07 Sep 2019 15:36:06 INFO  accommodationAPIs:25 - ******Starting TC01_addEmployee*******
+ 07 Sep 2019 15:43:02 INFO  accommodationAPIs:26 - ******Starting TC01_addEmployee*******
+ 07 Sep 2019 22:10:14 INFO  accommodationAPIs:26 - ******Starting TC01_addEmployee*******
+ 07 Sep 2019 22:10:50 INFO  accommodationAPIs:26 - ******Starting TC01_addEmployee*******
+ 07 Sep 2019 22:11:37 INFO  accommodationAPIs:26 - ******Starting TC01_addEmployee*******
+ 07 Sep 2019 22:43:42 INFO  accommodationAPIs:26 - ******Starting TC01_addEmployee*******
+ 22 Sep 2019 23:55:36 INFO  accommodationAPIs:27 - ******Starting TC01_addEmployee*******
+ 23 Sep 2019 00:01:55 INFO  accommodationAPIs:27 - ******Starting TC01_addEmployee*******
+ 23 Sep 2019 00:07:11 INFO  accommodationAPIs:27 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:08:25 INFO  accommodationAPIs:27 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:17:24 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:17:44 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:18:13 INFO  accommodationAPIs:31 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:33:21 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:36:07 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:36:50 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:37:11 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:39:16 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:41:56 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:47:10 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:48:25 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:49:45 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:52:11 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:52:33 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:53:38 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:53:58 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 00:54:11 INFO  accommodationAPIs:35 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 22:15:37 INFO  accommodationAPIs:36 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 22:17:03 INFO  accommodationAPIs:36 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 22:18:06 INFO  accommodationAPIs:36 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 22:19:51 INFO  accommodationAPIs:36 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 22:22:58 INFO  accommodationAPIs:36 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 22:27:03 INFO  accommodationAPIs:36 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 22:27:48 INFO  accommodationAPIs:36 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 22:32:10 INFO  accommodationAPIs:37 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 23:14:55 INFO  accommodationAPIs:37 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 23:17:39 INFO  accommodationAPIs:37 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 23:18:40 INFO  accommodationAPIs:37 - ******Starting TC03_SOAP test*******
+ 23 Sep 2019 23:22:58 INFO  accommodationAPIs:34 - ******Starting TC03_SOAP test*******
  

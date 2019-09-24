@@ -2,12 +2,7 @@ package tests;
 
 import static org.testng.Assert.assertEquals;
 
-import java.io.IOException;
-
-import org.json.simple.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
@@ -16,9 +11,6 @@ import base.testBase;
 import io.restassured.RestAssured;
 import io.restassured.authentication.PreemptiveBasicAuthScheme;
 import io.restassured.http.Method;
-import io.restassured.response.Response;
-import io.restassured.specification.PreemptiveAuthSpec;
-import io.restassured.specification.RequestSpecification;
 
 public class TC02_authentication extends testBase {
 	

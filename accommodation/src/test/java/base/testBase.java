@@ -1,8 +1,5 @@
 package base;
 
-import java.io.IOException;
-import java.util.Properties;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -10,7 +7,6 @@ import org.testng.annotations.BeforeClass;
 
 import com.github.javafaker.Faker;
 
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -20,11 +16,14 @@ public class testBase {
 
 
 
-		public static RequestSpecification httpRequest;
-		public static Response response;
-		public String empID = "51838";
-		public Logger logger;
-		public Faker faker = new Faker();
+		protected static RequestSpecification httpRequest;
+		protected static Response response;
+		protected String empID = "51838";
+		protected Logger logger;
+		protected Faker faker = new Faker();
+		protected int excelRowCount =0;
+		protected int excelColCount = 0;
+		protected String [][]inputBody = new String [excelRowCount][excelColCount];
 		
 		public testBase()
 		{

@@ -11,14 +11,16 @@ import org.testng.annotations.Test;
 
 import base.testBase;
 import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
 import io.restassured.http.Method;
 import utilities.excel;
 import utilities.miscellaneous;
 
-public class TC01_addEmployee extends testBase {
+public class TC01_addEmployee2 extends testBase {
 	
 	public static HashMap map = new HashMap();
 	public static JSONObject requestParams = new JSONObject(); 
+	
 	
 	@BeforeClass
 	public void prepareForTest() throws InterruptedException
@@ -35,7 +37,7 @@ public class TC01_addEmployee extends testBase {
 	@Test(dataProvider = "emplyeeDataProviderExcel")
 	public void addEmployeeRecord(String FirstName , String LastName, String UserName, String Password, String Email)
 	{
-		
+			
 		requestParams.put("FirstName", FirstName);
 		requestParams.put("LastName", LastName);
 		requestParams.put("UserName", UserName);
@@ -89,14 +91,14 @@ public class TC01_addEmployee extends testBase {
 	String[][] emplyeeDataProviderExcel() throws IOException
 	{
 		String path = System.getProperty("user.dir")+"/src/test/resources/empData.xlsx";
-		int rowCount = excel.getRowCount(path, "Sheet1");
-		int colCount = excel.getCellCount(path, "Sheet1",1);
+		int rowCount = excel.getRowCount(path, "empData");
+		int colCount = excel.getCellCount(path, "empData",1);
 		String emplyeeData [][] = new String[rowCount][colCount];
 		for (int i=1; i<=rowCount;i++)
 		{
 			for (int j =0 ;j<colCount;j++)
 			{
-				emplyeeData[i-1][j]=excel.getCellData(path, "Sheet1", i, j)+miscellaneous.generateRandomNumber();
+				emplyeeData[i-1][j]=excel.getCellData(path, "empData", i, j)+miscellaneous.generateRandomNumber();
 						
 			}
 			

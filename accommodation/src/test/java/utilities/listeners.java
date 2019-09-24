@@ -16,6 +16,7 @@ public class listeners extends TestListenerAdapter
 	public ExtentReports extent;
 	public ExtentTest test;
 	
+	@Override
 	public void onStart(ITestContext testContext)
 	{
 		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Reports/myReport.html");//specify location of the report
@@ -34,6 +35,7 @@ public class listeners extends TestListenerAdapter
 			
 	}
 	
+	@Override
 	public void onTestSuccess(ITestResult result)
 	{
 		//test=extent.createTest(result.getClass().getName());
@@ -43,6 +45,7 @@ public class listeners extends TestListenerAdapter
 		test.log(Status.PASS, "Test Case PASSED IS " + result.getName());
 	}
 	
+	@Override
 	public void onTestFailure(ITestResult result)
 	{
 		test=extent.createTest(result.getName()); // create new entry in th report
@@ -52,12 +55,14 @@ public class listeners extends TestListenerAdapter
 	
 	}
 	
+	@Override
 	public void onTestSkipped(ITestResult result)
 	{
 		test=extent.createTest(result.getName()); // create new entry in th report
 		test.log(Status.SKIP, "Test Case SKIPPED IS " + result.getName());
 	}
 	
+	@Override
 	public void onFinish(ITestContext testContext)
 	{
 		extent.flush();
